@@ -48,7 +48,7 @@ export async function getStaticPaths() {
     // True: don't have all the supported parameter values (generate a page on the fly).
     // Blocking: NextJS will not put 404 error if page not found immediately. A page will be generated on demand and then gets cached.
     // NOTE: true returns page immediately and pull down the dynamic data.
-    fallback: blocking,
+    fallback: "blocking",
     // paths: [
     //   {
     //     params: {
